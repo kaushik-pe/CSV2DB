@@ -1,0 +1,8 @@
+{
+    "name":"csv",
+    "main":"index.html",
+    "window":
+    {
+      "icon": "icon.png"
+    }
+}

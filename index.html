@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>CSV TO DB Converter</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" 
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<link rel="Stylesheet" href="style.css">
+    </head>
+    <div id="menubar">
+        <span>
+            asfddef
+        </span>
+         <ul>
+             <li>
+                <img src="images/close.png" height="22px" width="22px" onclick="CloseWindow()">  
+             </li>
+             <li>
+               <img src="images/maximize.png" height="22px" width="22px" onclick="maxi()">
+             </li>
+              <li>
+               <img src="images/minimize.png" height="22px" width="22px" onclick="mini()">
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+        <div>
+            <center>
+                <table>
+                    <tr>
+                        <td>DataBase</td>    
+                        <td><input type="text" id="db"></td>
+                    </tr>
+                    <tr>
+                        <td>User</td>    
+                        <td><input type="text" id="usr"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>    
+                        <td><input type="text" id="pwd"></td>
+                    </tr>
+                </table>
+                <input type="button" class="btn btn-info" onclick="connect()" value="Create Connection">
+                </br>
+                </br>
+    </br>
+            </center>
+         </div>
+        <center>
+            <div id="fold_loc" style="display:none">
+                FOLDER LOCATION<br>
+                <input type="file" id="folder_path"><br>
+                <input type="button" class="btn btn-info" value='Select' onclick="readfile()">
+            </div>
+        </center>
+    </div>
+ </html>
